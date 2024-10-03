@@ -207,27 +207,26 @@ main section ul li {
 }
 
 #our-staff {
+    width: 100%;
     background-color: black;
     text-align: center;
-    padding: 50px 20px;
+    padding: 25px 10px;
     border-top: 5px solid grey;
 }
 
 #our-staff h2 {
     color: white;
     text-align: center;
-    font-size: 2rem;
     margin-bottom: 20px;
     text-decoration: underline;
 }
 
+
 .staff-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
 }
-
 .staff-member {
     width: 250px;
     margin: 10px;
@@ -259,11 +258,21 @@ main section ul li {
     color: black;
 }
 .staff-member img {
-  width: 150px; /* Set a fixed width */
-  height: 150px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image maintains its aspect ratio while filling the container */
+  width: 150px; 
+  height: 150px;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
+}
+.staff-member img:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+.staff-member blockquote{
+  line-height: normal;
+}
+.staff-member p{
+  line-height: 20.8px;
 }
 
 .staff-member:hover {
@@ -272,28 +281,10 @@ main section ul li {
     color: white;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-media a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: #4CAF50;
-    transition: color 0.3s ease;
-}
-
-.social-media a:hover {
-    color: #45a049;
-}
-
 #contact {
-    background-color: #111;
+    background-color: black;
     color: white;
     padding: 40px;
-    border-top: 5px solid grey;
     box-sizing: border-box;
     text-align: center;
     width: 100%;
@@ -307,20 +298,23 @@ main section ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .social-media a {
     margin: 0 10px;
-    font-size: 24px;
-    color: #4CAF50;
+    font-size: 50px;
+    padding: 120px;
+    padding-bottom: 0;
+    color: red;
     transition: color 0.3s ease;
 }
 
 .social-media a:hover {
-    color: #45a049;
+    color: purple;;
 }
 
-/* .contact-form {
+.contact-form {
     margin-top: 20px;
     width: 100%;
     max-width: 800px;
@@ -330,9 +324,11 @@ main section ul li {
     display: flex;
     flex-direction: column;
 }
+
 .contact-form label {
     margin: 10px 0 5px;
 }
+
 .contact-form input, .contact-form textarea {
     padding: 10px;
     margin-bottom: 10px;
@@ -341,9 +337,11 @@ main section ul li {
     color: white;
     border-radius: 5px;
 }
+
 .contact-form input::placeholder, .contact-form textarea::placeholder {
     color: #888;
 }
+
 .contact-form button {
     padding: 10px;
     background-color: #4CAF50;
@@ -352,9 +350,11 @@ main section ul li {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .contact-form button:hover {
     background-color: #45a049;
-} */
+}
+
 /* Media query for smartphones and tablets */
 @media (max-width: 768px) {
     .contact-info {
