@@ -209,12 +209,14 @@ main section ul li {
 #our-staff {
     background-color: black;
     text-align: center;
+    padding: 50px 20px;
     border-top: 5px solid grey;
 }
 
 #our-staff h2 {
     color: white;
     text-align: center;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-decoration: underline;
 }
@@ -222,19 +224,18 @@ main section ul li {
 .staff-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px;
 }
 
 .staff-member {
-    width: 45%;
+    width: 250px;
     margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 20px;
     color: white;
     line-height: 0.75;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .staff-member:nth-child(1){
@@ -258,10 +259,11 @@ main section ul li {
     color: black;
 }
 .staff-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while filling the container */
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .staff-member:hover {
@@ -318,7 +320,7 @@ main section ul li {
     color: #45a049;
 }
 
-.contact-form {
+/* .contact-form {
     margin-top: 20px;
     width: 100%;
     max-width: 800px;
@@ -328,11 +330,9 @@ main section ul li {
     display: flex;
     flex-direction: column;
 }
-
 .contact-form label {
     margin: 10px 0 5px;
 }
-
 .contact-form input, .contact-form textarea {
     padding: 10px;
     margin-bottom: 10px;
@@ -341,11 +341,9 @@ main section ul li {
     color: white;
     border-radius: 5px;
 }
-
 .contact-form input::placeholder, .contact-form textarea::placeholder {
     color: #888;
 }
-
 .contact-form button {
     padding: 10px;
     background-color: #4CAF50;
@@ -354,11 +352,9 @@ main section ul li {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .contact-form button:hover {
     background-color: #45a049;
-}
-
+} */
 /* Media query for smartphones and tablets */
 @media (max-width: 768px) {
     .contact-info {
