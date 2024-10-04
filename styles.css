@@ -363,10 +363,12 @@ main section ul li {
 @media (max-width: 768px) {
     .contact-info {
         flex-direction: column;
+        align-items: center;
     }
 
     .social-media a {
         font-size: 20px;
+        padding: 60px;
     }
 }
 /* Media query for smartphones and tablets */
