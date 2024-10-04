@@ -16,14 +16,16 @@ header {
 
 header .logo {
     position: absolute;
-    top: 1px;
+    top: -5px;
     left: 1px;
     width: 163px;
     height: auto;
 }
 header h1 {
     margin-left: 144px;
+    font-size: 29px;
     color: black;
+    bottom: 2px;
 }
 nav ul {
   list-style: none;
@@ -304,12 +306,14 @@ main section ul li {
 .social-media a {
     margin: 0 10px;
     font-size: 50px;
-    padding: 120px;
+    padding: 60px;
     padding-bottom: 0;
     color: red;
     transition: color 0.3s ease;
 }
-
+.social-media a p{
+  font-size: 25px;
+}
 .social-media a:hover {
     color: purple;;
 }
