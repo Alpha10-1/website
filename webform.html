@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for Social Auxiliary Work Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+        .form-section h3 {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Application Form for Social Auxiliary Work Course</h1>
+        <form>
+            <div class="form-section">
+                <h3>Personal Details</h3>
+                <div class="form-group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname">
+                </div>
+                <div class="form-group">
+                    <label for="fullNames">Full Names:</label>
+                    <input type="text" id="fullNames" name="fullNames">
+                </div>
+                <div class="form-group">
+                    <label>Title:</label>
+                    <input type="radio" name="title" value="Mr"> Mr
+                    <input type="radio" name="title" value="Miss"> Miss
+                    <input type="radio" name="title" value="Ms"> Ms
+                    <input type="radio" name="title" value="Mrs"> Mrs
+                    <input type="radio" name="title" value="Other"> Other
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Male"> Male
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="form-group">
+                    <label for="idNumber">Identity Document No (RSA):</label>
+                    <input type="text" id="idNumber" name="idNumber">
+                </div>
+                <div class="form-group">
+                    <label for="passportNo">Passport No (if no South African ID):</label>
+                    <input type="text" id="passportNo" name="passportNo">
+                </div>
+                <div class="form-group">
+                    <label for="proposedQualification">Proposed Qualification:</label>
+                    <select id="proposedQualification" name="proposedQualification">
+                        <option value="social_auxiliary_worker">OC: SOCIAL AUXILIARY WORKER</option>
+                        <option value="child_youth_care_worker">OC: CHILD AND YOUTH CARE WORKER</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Contact Details</h3>
+                <div class="form-group">
+                    <label for="physicalAddress">Physical Address:</label>
+                    <textarea id="physicalAddress" name="physicalAddress"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" name="postalCode">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="homePhone">Home Phone:</label>
+                    <input type="text" id="homePhone" name="homePhone">
+                </div>
+                <div class="form-group">
+                    <label for="workPhone">Work Phone:</label>
+                    <input type="text" id="workPhone" name="workPhone">
+                </div>
+                <div class="form-group">
+                    <label for="cellPhone">Cell Phone:</label>
+                    <input type="text" id="cellPhone" name="cellPhone">
+                </div>
+                <div class="form-group">
+                    <label for="altPhone">Alternative Phone:</label>
+                    <input type="text" id="altPhone" name="altPhone">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Next of Kin Details</h3>
+                <div class="form-group">
+                    <label for="nextOfKinName">Full Names:</label>
+                    <input type="text" id="nextOfKinName" name="nextOfKinName">
+                </div>
+                <div class="form-group">
+                    <label for="nextOfKinContact">Contact Number:</label>
+                    <input type="text" id="nextOfKinContact" name="nextOfKinContact">
+                </div>
+                <div class="form-group">
+                    <label for="nextOfKinRelationship">Relationship:</label>
+                    <input type="text" id="nextOfKinRelationship" name="nextOfKinRelationship">
+                </div>
+                <div class="form-group">
+                    <label for="nextOfKinID">Identity Document No (RSA):</label>
+                    <input type="text" id="nextOfKinID" name="nextOfKinID">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>School Information</h3>
+                <div class="form-group">
+                    <label for="schoolName">School Name:</label>
+                    <input type="text" id="schoolName" name="schoolName">
+                </div>
+                <div class="form-group">
+                    <label for="schoolAddress">School Address:</label>
+                    <textarea id="schoolAddress" name="schoolAddress"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="schoolPhone">Telephone No:</label>
+                    <input type="text" id="schoolPhone" name="schoolPhone">
+                </div>
+                <div class="form-group">
+                    <label for="highestGrade">Highest Grade Passed:</label>
+                    <input type="text" id="highestGrade" name="highestGrade">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Post School Information</h3>
+                <div class="form-group">
+                    <label for="institutionName">Name of Institution:</label>
+                    <input type="text" id="institutionName" name="institutionName">
+                </div>
+                <div class="form-group">
+                    <label for="qualification">Qualification/Course:</label>
+                    <input type="text" id="qualification" name="qualification">
+                </div>
+                <div class="form-group">
+                    <label for="yearObtained">Year of Obtaining Qualification/Certificate:</label>
+                    <input type="text" id="yearObtained" name="yearObtained">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Employment Information</h3>
+                <div class="form-group">
+                    <label for="employerName">Name of Organisation/Company:</label>
+                    <input type="text" id="employerName" name="employerName">
+                </div>
+                <div class="form-group">
+                    <label for="designation">Designation:</label>
+                    <input type="text" id="designation" name="designation">
+                </div>
+                <div class="form-group">
+                    <label for="employmentPeriod">Period of Employment:</label>
+                    <input type="text" id="employmentPeriod" name="employmentPeriod">
+                </div>
+                <div class="form-group">
+                    <label for="contactPerson">Contact Person and Contact No:</label>
+                    <input type="text" id="contactPerson" name="contactPerson">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>General Information</h3>
+                <div class="form-group">
+                    <label for="populationGroup">Population Group:</label>
+                    <select id="populationGroup" name="populationGroup">
+                        <option value="black">Black</option>
+                        <option value="colored">Colored</option>
+                        <option value="indian">Indian</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="homeLanguage">Home Language:</label>
+                    <input type="text" id="homeLanguage" name="homeLanguage">
+                </div>
+                <div class="form-group">
+                    <label for="specialNeeds">Disability/Special Needs (e.g. impaired hearing):</label>
+                    <textarea id="specialNeeds" name="specialNeeds"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="volunteering">Community-Based Activities (e.g. volunteering):</label>
+                    <textarea id="volunteering" name="volunteering"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Declaration</h3>
+                <div class="form-group">
+                    <label>
+                        I declare that the information provided is true and accurate. I agree to abide by the rules and regulations of the institution.
+                    </label>
+                    <input type="checkbox" name="declaration" value="agree"> I Agree
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
