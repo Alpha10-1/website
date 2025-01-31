@@ -38,8 +38,15 @@
             background: #218838;
         }
         .course ul{
-            padding-left: 60px;
-            list-style-position: inside;
+            list-style: none; 
+            padding: 0;
+            text-align: center;
+        }
+        .course ul li::before {
+            content: "•"; /* Custom bullet */
+            color: black;
+            display: inline-block;
+            width: 1em;
             text-align: center;
         }
     </style>
