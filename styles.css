@@ -100,9 +100,10 @@ main section ul li {
     box-sizing: border-box; /* Include padding in height calculations */
 }
 .section {
-    background-size: contain; /* Ensure the background image fits the section */
-    background-position: center center; /* Center the image */
-    background-repeat: no-repeat; /* No tiling of the image */
+    background-size: cover; /* Ensures the image fully covers the section */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh; /* Adjust height to fit content */
 }
 #mission, #vision, #values {
     display: none;
@@ -155,10 +156,10 @@ main section ul li {
 #about-us .nav-arrows {
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 90%; /* Keep inside image */
+    left: 5%; /* Center the arrows */
     display: flex;
     justify-content: space-between;
-    pointer-events: none;
   }
 
 .nav-arrows .arrow {
