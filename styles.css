@@ -792,7 +792,7 @@ body {
 @media screen and (min-width: 1440px) {
     .section {
         width: 100vw;
-        height: auto;
+        height: 50vw;
         padding: 25px;
         box-sizing: border-box;
         position: absolute;
@@ -809,7 +809,7 @@ body {
 @media screen and (max-width: 1439px) {
         .section {
         width: 100vw;
-        height: auto;
+        height: 50vw;
         padding: 25px;
         box-sizing: border-box;
         position: absolute;
@@ -826,7 +826,7 @@ body {
 @media screen and (max-width: 1023px) {
    .section {
         width: 100vw;
-        height: auto;
+        height: 50vw;
         padding: 25px;
         box-sizing: border-box;
         position: absolute;
@@ -843,7 +843,7 @@ body {
 @media screen and (max-width: 767px) {
   .section {
         width: 100vw;
-        height: auto;
+        height: 50vw;
         padding: 25px;
         box-sizing: border-box;
         position: absolute;
@@ -860,7 +860,7 @@ body {
 @media screen and (max-width: 479px) {
    .section {
         width: 100vw;
-        height: auto;
+        height: 50vw;
         padding: 25px;
         box-sizing: border-box;
         position: absolute;
