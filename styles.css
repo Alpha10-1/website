@@ -790,86 +790,26 @@ body {
 }
 /* Large Desktop Screens (1440px and up) */
 @media screen and (min-width: 1440px) {
-    .section {
-        width: 100vw;
-        height: 50vw;
-        padding: 25px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0; /* Ensure smooth transition */
-    }
+    
 }
 
 /* Standard Desktops & Laptops (1024px - 1439px) */
 @media screen and (max-width: 1439px) {
-        .section {
-        width: 100vw;
-        height: 50vw;
-        padding: 25px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0; /* Ensure smooth transition */
-    }
+      
 }
 
 /* Tablets (768px - 1023px) */
 @media screen and (max-width: 1023px) {
-   .section {
-        width: 100vw;
-        height: 50vw;
-        padding: 25px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0; /* Ensure smooth transition */
-    }
+   
 }
 
 /* Large Mobile Devices (480px - 767px) */
 @media screen and (max-width: 767px) {
-  .section {
-        width: 100vw;
-        height: 50vw;
-        padding: 25px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0; /* Ensure smooth transition */
-    }
+  
 }
 
 /* Small Mobile Devices (Up to 479px) */
 @media screen and (max-width: 479px) {
-   .section {
-        width: 100vw;
-        height: 50vw;
-        padding: 25px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0; /* Ensure smooth transition */
-    }
+   
 }
 
