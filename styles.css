@@ -378,41 +378,41 @@ main section ul li {
             background-color: #f4f4f4;
             text-align: center;
         }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .course {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .apply-btn {
-            display: inline-block;
-            padding: 10px 15px;
-            background: #28a745;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .apply-btn:hover {
-            background: #218838;
-        }
-        .course ul{
-            list-style-type: disc;
-            list-style-position: outside;
-            padding-left: 40px;
-            margin: 25px 150px;
-        }
-        .course ul li{
-            text-align: left;     
-        }
-        @media screen and (max-width: 768px) {
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.course {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.apply-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.apply-btn:hover {
+    background: #218838;
+}
+.course ul{
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 40px;
+    margin: 25px 150px;
+}
+.course ul li{
+    text-align: left;     
+}
+@media screen and (max-width: 768px) {
     .container {
         width: 90%;
         padding: 15px;
@@ -769,7 +769,146 @@ body {
     }
 
     .social-media a {
-        font
+        font-size: 30px;
+        padding: 20px; /* Reduce padding */
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+/* Tablets and smaller screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header .logo {
+        position: static;
+        width: 140px; /* Reduce logo size */
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .burger-menu {
+        display: flex; /* Show burger menu */
+    }
+
+    main h2 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    main p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .section {
+        padding: 30px;
+    }
+
+    #about-us {
+        flex-direction: column; /* Stack sections vertically */
+        width: 100%;
+    }
+
+    .nav-arrows {
+        display: none; /* Hide navigation arrows */
+    }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    main h2 {
+        font-size: 2rem; /* Further reduce heading size */
+    }
+
+    main p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    main section ul li {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    #about-us {
+        flex-direction: column; /* Ensure sections remain stacked */
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu div {
+        background-color: black;
+    }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        width: 100px; /* Further reduce logo size */
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    main p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
 
 
 
