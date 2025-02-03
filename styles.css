@@ -648,6 +648,12 @@ body {
     #about-us p{
         font-size: 1em;
     }
+    #about-us #vision h2{
+        font-size: 2em;
+    }
+    #about-us #vision p{
+        font-size: 1.2em;
+    }
     .services-container {
         justify-content: space-between;
     }
@@ -677,6 +683,12 @@ body {
     #about-us p{
         font-size: 0.9em;
     }
+    #about-us #vision h2{
+        font-size: 1.7em;
+    }
+    #about-us #vision p{
+        font-size: 1.1em;
+    }
     .service-tile {
         width: 100%; /* Full width on very small devices */
     }
@@ -700,6 +712,12 @@ body {
     }
     #about-us p{
         font-size: 1em;
+    }
+    #about-us #vision h2{
+        font-size: 2em;
+    }
+    #about-us #vision p{
+        font-size: 1.2em;
     }
     .staff-container {
         justify-content: center;
@@ -742,6 +760,12 @@ body {
     #about-us p{
         font-size: 0.95em;
     }
+    #about-us #vision h2{
+        font-size: 1.8em;
+    }
+    #about-us #vision p{
+        font-size: 1.15em;
+    }
     .staff-container {
         flex-direction: column;
         align-items: center;
@@ -771,6 +795,12 @@ body {
     }
     #about-us p{
         font-size: 0.9em;
+    }
+    #about-us #vision h2{
+        font-size: 1.6em;
+    }
+    #about-us #vision p{
+        font-size: 1.1em;
     }
     .staff-member {
         width: 75%; /* Full width for small screens */
@@ -819,7 +849,7 @@ body {
     }
 }
 @media (max-width: 479px) {
-      #intro {
+    #intro {
         height: 150px;; /* Adjust as needed */
         padding: 20px; /* Reduce padding */
     }
