@@ -648,6 +648,24 @@ body {
     #intro p{
         font-size: 1em;
     }
+    #mission h2{
+        font-size: 1.8em;
+    }
+    #mission p{
+        font-size: 1em;
+    }
+    #vision h2{
+        font-size: 1.8em;
+    }
+    #vision p{
+        font-size: 1em;
+    }
+    #values h2{
+        font-size: 1.8em;
+    }
+    #values p{
+        font-size: 1em;
+    }
     .services-container {
         justify-content: space-between;
     }
@@ -677,6 +695,24 @@ body {
     #intro p{
         font-size: 0.9em;
     }
+    #mission h2{
+        font-size: 1.5em;
+    }
+    #mission p{
+        font-size: 0.9em;
+    }
+    #vision h2{
+        font-size: 1.5em;
+    }
+    #vision p{
+        font-size: 0.9em;
+    }
+    #values h2{
+        font-size: 1.5em;
+    }
+    #values p{
+        font-size: 0.9em;
+    }
     .service-tile {
         width: 100%; /* Full width on very small devices */
     }
@@ -699,6 +735,24 @@ body {
         font-size: 1.8em;
     }
     #intro p{
+        font-size: 1em;
+    }
+    #mission h2{
+        font-size: 1.8em;
+    }
+    #mission p{
+        font-size: 1em;
+    }
+    #vision h2{
+        font-size: 1.8em;
+    }
+    #vision p{
+        font-size: 1em;
+    }
+    #values h2{
+        font-size: 1.8em;
+    }
+    #values p{
         font-size: 1em;
     }
     .staff-container {
@@ -742,6 +796,24 @@ body {
     #intro p{
         font-size: 0.95em;
     }
+    #mission h2{
+        font-size: 1.6em;
+    }
+    #mission p{
+        font-size: 0.95em;
+    }
+    #vision h2{
+        font-size: 1.6em;
+    }
+    #vision p{
+        font-size: 0.95em;
+    }
+    #values h2{
+        font-size: 1.6em;
+    }
+    #values p{
+        font-size: 0.95em;
+    }
     .staff-container {
         flex-direction: column;
         align-items: center;
@@ -772,6 +844,24 @@ body {
     #intro p{
         font-size: 0.9em;
     }
+    #mission h2{
+        font-size: 1.4em;
+    }
+    #mission p{
+        font-size: 0.9em;
+    }
+    #vision h2{
+        font-size: 1.4em;
+    }
+    #vision p{
+        font-size: 0.9em;
+    }
+    #values h2{
+        font-size: 1.4em;
+    }
+    #values p{
+        font-size: 0.9em;
+    }
     .staff-member {
         width: 75%; /* Full width for small screens */
         padding: 10px;
@@ -791,9 +881,6 @@ body {
 }
 /* Adjust layout for tablets */
 @media screen and (max-width: 1024px) {
-    #intro {
-        font-size: 
-    }
     .social-media {
         display: flex;
         flex-wrap: nowrap;
