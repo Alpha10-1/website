@@ -642,28 +642,10 @@ body {
 
 /* For mobile screens */
 @media screen and (max-width: 768px) {
-    #intro h2{
+    #about-us h2{
         font-size: 1.8em;
     }
-    #intro p{
-        font-size: 1em;
-    }
-    #mission h2{
-        font-size: 1.8em;
-    }
-    #mission p{
-        font-size: 1em;
-    }
-    #vision h2{
-        font-size: 1.8em;
-    }
-    #vision p{
-        font-size: 1em;
-    }
-    #values h2{
-        font-size: 1.8em;
-    }
-    #values p{
+    #about-us p{
         font-size: 1em;
     }
     .services-container {
@@ -689,28 +671,10 @@ body {
 
 /* For very small screens (phones) */
 @media screen and (max-width: 480px) {
-    #intro h2{
+    #about-us h2{
         font-size: 1.5em;
     }
-    #intro p{
-        font-size: 0.9em;
-    }
-    #mission h2{
-        font-size: 1.5em;
-    }
-    #mission p{
-        font-size: 0.9em;
-    }
-    #vision h2{
-        font-size: 1.5em;
-    }
-    #vision p{
-        font-size: 0.9em;
-    }
-    #values h2{
-        font-size: 1.5em;
-    }
-    #values p{
+    #about-us p{
         font-size: 0.9em;
     }
     .service-tile {
@@ -731,28 +695,10 @@ body {
 }
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
-    #intro h2{
+    #about-us h2{
         font-size: 1.8em;
     }
-    #intro p{
-        font-size: 1em;
-    }
-    #mission h2{
-        font-size: 1.8em;
-    }
-    #mission p{
-        font-size: 1em;
-    }
-    #vision h2{
-        font-size: 1.8em;
-    }
-    #vision p{
-        font-size: 1em;
-    }
-    #values h2{
-        font-size: 1.8em;
-    }
-    #values p{
+    #about-us p{
         font-size: 1em;
     }
     .staff-container {
@@ -790,28 +736,10 @@ body {
 
 /* For mobile screens */
 @media screen and (max-width: 768px) {
-    #intro h2{
+    #about-us h2{
         font-size: 1.6em;
     }
-    #intro p{
-        font-size: 0.95em;
-    }
-    #mission h2{
-        font-size: 1.6em;
-    }
-    #mission p{
-        font-size: 0.95em;
-    }
-    #vision h2{
-        font-size: 1.6em;
-    }
-    #vision p{
-        font-size: 0.95em;
-    }
-    #values h2{
-        font-size: 1.6em;
-    }
-    #values p{
+    #about-us p{
         font-size: 0.95em;
     }
     .staff-container {
@@ -838,28 +766,10 @@ body {
 
 /* For very small screens (phones) */
 @media screen and (max-width: 480px) {
-    #intro h2{
+    #about-us h2{
         font-size: 1.4em;
     }
-    #intro p{
-        font-size: 0.9em;
-    }
-    #mission h2{
-        font-size: 1.4em;
-    }
-    #mission p{
-        font-size: 0.9em;
-    }
-    #vision h2{
-        font-size: 1.4em;
-    }
-    #vision p{
-        font-size: 0.9em;
-    }
-    #values h2{
-        font-size: 1.4em;
-    }
-    #values p{
+    #about-us p{
         font-size: 0.9em;
     }
     .staff-member {
