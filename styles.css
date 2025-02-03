@@ -642,6 +642,12 @@ body {
 
 /* For mobile screens */
 @media screen and (max-width: 768px) {
+    #intro h2{
+        font-size: 1.8em;
+    }
+    #intro p{
+        font-size: 1em;
+    }
     .services-container {
         justify-content: space-between;
     }
@@ -665,6 +671,12 @@ body {
 
 /* For very small screens (phones) */
 @media screen and (max-width: 480px) {
+    #intro h2{
+        font-size: 1.5em;
+    }
+    #intro p{
+        font-size: 0.9em;
+    }
     .service-tile {
         width: 100%; /* Full width on very small devices */
     }
@@ -683,6 +695,12 @@ body {
 }
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
+    #intro h2{
+        font-size: 1.8em;
+    }
+    #intro p{
+        font-size: 1em;
+    }
     .staff-container {
         justify-content: center;
     }
@@ -718,6 +736,12 @@ body {
 
 /* For mobile screens */
 @media screen and (max-width: 768px) {
+    #intro h2{
+        font-size: 1.6em;
+    }
+    #intro p{
+        font-size: 0.95em;
+    }
     .staff-container {
         flex-direction: column;
         align-items: center;
@@ -742,6 +766,12 @@ body {
 
 /* For very small screens (phones) */
 @media screen and (max-width: 480px) {
+    #intro h2{
+        font-size: 1.4em;
+    }
+    #intro p{
+        font-size: 0.9em;
+    }
     .staff-member {
         width: 75%; /* Full width for small screens */
         padding: 10px;
@@ -761,6 +791,9 @@ body {
 }
 /* Adjust layout for tablets */
 @media screen and (max-width: 1024px) {
+    #intro {
+        font-size: 
+    }
     .social-media {
         display: flex;
         flex-wrap: nowrap;
@@ -801,10 +834,6 @@ body {
     }
 }
 @media (max-width: 767px) {
-      #intro {
-        height: 200px; /* Adjust as needed */
-        padding: 20px; /* Reduce padding */
-    }
     .section{
         height: 40%;
     }
@@ -813,10 +842,6 @@ body {
     }
 }
 @media (max-width: 1023px) {
-    #intro {
-        height: 250px; /* Adjust as needed */
-        padding: 20px; /* Reduce padding */
-    }
     .section{
         height: 40%;
     }
