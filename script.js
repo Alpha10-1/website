@@ -2,30 +2,49 @@ function toggleMenu() {
     document.querySelector('nav ul').classList.toggle('show');
 }
 
-// JavaScript for automatic slide
-let currentIndex = 0;
-const sections = document.querySelectorAll('#about-us .section');
-const leftArrow = document.querySelector('.left');
-const rightArrow = document.querySelector('.right');
+document.addEventListener("DOMContentLoaded", function () {
+    let sections = document.querySelectorAll(".section");
+    let aboutUs = document.querySelector("#about-us");
+    let currentIndex = 0;
 
-let autoSlideInterval = setInterval(nextSlide, 5000);
-let lastInteractionTime = new Date().getTime();
-
-function showSlide(index) {
-    if (index >= sections.length) {
-        index = 0;
-    } else if (index < 0) {
-        index = sections.length - 1;
+    function updateSectionHeight() {
+        let activeSection = document.querySelector(".section.active");
+        if (activeSection) {
+            aboutUs.style.height = activeSection.scrollHeight + "px"; // Adjust height dynamically
+        }
     }
-    sections.forEach((section, i) => {
-        section.style.transform = `translateX(${-index * 100}vw)`;
-    });
-    currentIndex = index;
-}
 
-function nextSlide() {
-    const currentTime = new Date().getTime();
-    if (currentTime - lastInteractionTime >= 30000) {
+    function showSection(index) {
+        sections.forEach((section, i) => {
+            section.classList.remove("active");
+            section.style.display = "none";
+            section.style.opacity = "0";
+            if (i === index) {
+                section.classList.add("active");
+                section.style.display = "block";
+                setTimeout(() => {
+                    section.style.opacity = "1";
+                }, 50);
+            }
+        });
+
+        updateSectionHeight(); // Update height after changing section
+    }
+
+    document.querySelector(".arrow.left").addEventListener("click", function () {
+        currentIndex = (currentIndex === 0) ? sections.length - 1 : currentIndex - 1;
+        showSection(currentIndex);
+    });
+
+    document.querySelector(".arrow.right").addEventListener("click", function () {
+        currentIndex = (currentIndex === sections.length - 1) ? 0 : currentIndex + 1;
+        showSection(currentIndex);
+    });
+
+    showSection(currentIndex); // Ensure first section is visible
+    updateSectionHeight(); // Set initial height
+});
+e >= 30000) {
         showSlide(currentIndex + 1);
     }
 }
