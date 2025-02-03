@@ -47,9 +47,17 @@ leftArrow.addEventListener('click', () => {
 showSlide(currentIndex);
 
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth <= 768) { // Only apply on mobile devices
+    if (window.innerWidth <= 768) { // Apply only on mobile devices
         let sections = document.querySelectorAll(".section");
         let currentIndex = 0;
+
+        // Ensure the first section is always visible
+        sections.forEach((section, i) => {
+            section.classList.remove("active");
+            if (i === 0) {
+                section.classList.add("active");
+            }
+        });
 
         function showSection(index) {
             sections.forEach((section, i) => {
@@ -69,6 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
             currentIndex = (currentIndex === sections.length - 1) ? 0 : currentIndex + 1;
             showSection(currentIndex);
         });
+
+        showSection(currentIndex); // Show first section by default
+    }
+});
 
         showSection(currentIndex); // Show first section by default
     }
