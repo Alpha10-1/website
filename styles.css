@@ -788,3 +788,19 @@ body {
         padding: 8px;
     }
 }
+@media (max-width: 479px) {
+    .section{
+        height: 40%;
+    }
+}
+@media (max-width: 767px) {
+    .section{
+        height: 40%;
+    }
+}
+@media (max-width: 1023px) {
+    .section{
+        height: 40%;
+    }
+}
+
