@@ -3,6 +3,7 @@ function toggleMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    // "About Us" Section Switching
     let sections = document.querySelectorAll(".section");
     let aboutUs = document.querySelector("#about-us");
     let currentIndex = 0;
@@ -43,24 +44,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showSection(currentIndex); // Ensure first section is visible
     updateSectionHeight(); // Set initial height
-});
-e >= 30000) {
-        showSlide(currentIndex + 1);
+
+    // Slideshow Functionality
+    let slides = document.querySelectorAll(".slide");
+    let currentSlideIndex = 0;
+    let autoSlideInterval;
+    let lastInteractionTime = new Date().getTime();
+    
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? "block" : "none";
+        });
+        currentSlideIndex = index;
     }
-}
 
-function resetAutoSlideTimer() {
-    lastInteractionTime = new Date().getTime();
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(nextSlide, 5000);
-}
-rightArrow.addEventListener('click', () => {
-    showSlide(currentIndex + 1);
-    resetAutoSlideTimer();
-});
-leftArrow.addEventListener('click', () => {
-    showSlide(currentIndex - 1);
-    resetAutoSlideTimer();
-});
+    function nextSlide() {
+        let now = new Date().getTime();
+        if (now - lastInteractionTime >= 30000) {
+            showSlide((currentSlideIndex + 1) % slides.length);
+        }
+    }
 
-showSlide(currentIndex);
+    function resetAutoSlideTimer() {
+        lastInteractionTime = new Date().getTime();
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    document.querySelector(".arrow.right").addEventListener("click", () => {
+        showSlide((currentSlideIndex + 1) % slides.length);
+        resetAutoSlideTimer();
+    });
+
+    document.querySelector(".arrow.left").addEventListener("click", () => {
+        showSlide((currentSlideIndex - 1 + slides.length) % slides.length);
+        resetAutoSlideTimer();
+    });
+
+    showSlide(currentSlideIndex);
+    autoSlideInterval = setInterval(nextSlide, 5000); // Start auto-sliding
+});
