@@ -626,3 +626,59 @@ body {
         font-size: 0.9em;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .service-tile {
+        width: 48%; /* Adjusting to fit two tiles side-by-side */
+    }
+}
+
+/* For screens between 768px - 900px (Smaller tablets) */
+@media screen and (max-width: 900px) {
+    .service-tile {
+        width: 47%; /* Keeps at least 2 tiles per row */
+    }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+    .services-container {
+        justify-content: space-between;
+    }
+
+    .service-tile {
+        width: 90%; /* Stacks in smaller screens but maintains readability */
+    }
+
+    #services h2 {
+        font-size: 1.8em;
+    }
+
+    .service-tile h3 {
+        font-size: 1.4em;
+    }
+
+    .service-tile ul li {
+        font-size: 1rem;
+    }
+}
+
+/* For very small screens (phones) */
+@media screen and (max-width: 480px) {
+    .service-tile {
+        width: 100%; /* Full width on very small devices */
+    }
+
+    #services h2 {
+        font-size: 1.5em;
+    }
+
+    .service-tile h3 {
+        font-size: 1.2em;
+    }
+
+    .service-tile ul li {
+        font-size: 0.9rem;
+    }
+}
+
