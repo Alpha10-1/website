@@ -789,6 +789,10 @@ body {
     }
 }
 @media (max-width: 479px) {
+      #intro {
+        height: auto; /* Adjust as needed */
+        padding: 20px; /* Reduce padding */
+    }
     .section{
         height: 40%;
     }
@@ -797,6 +801,10 @@ body {
     }
 }
 @media (max-width: 767px) {
+      #intro {
+        height: auto; /* Adjust as needed */
+        padding: 20px; /* Reduce padding */
+    }
     .section{
         height: 40%;
     }
