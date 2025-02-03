@@ -759,6 +759,18 @@ body {
         font-size: 0.9em;
     }
 }
+/* Adjust layout for tablets */
+@media screen and (max-width: 1024px) {
+    .social-media {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-media a {
+        font
+
 
 
 
