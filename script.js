@@ -46,18 +46,31 @@ leftArrow.addEventListener('click', () => {
 
 showSlide(currentIndex);
 
-// document.getElementById('enquiryForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//
-//     const formData = new FormData(this);
-//
-//     fetch('/submit-enquiry', {
-//         method: 'POST',
-//         body: formData
-//     }).then(response => response.text()).then(data => {
-//         alert(data);
-//         this.reset();
-//     }).catch(error => {
-//         console.error('Error:', error);
-//     });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) { // Only apply on mobile devices
+        let sections = document.querySelectorAll(".section");
+        let currentIndex = 0;
+
+        function showSection(index) {
+            sections.forEach((section, i) => {
+                section.classList.remove("active");
+                if (i === index) {
+                    section.classList.add("active");
+                }
+            });
+        }
+
+        document.querySelector(".arrow.left").addEventListener("click", function () {
+            currentIndex = (currentIndex === 0) ? sections.length - 1 : currentIndex - 1;
+            showSection(currentIndex);
+        });
+
+        document.querySelector(".arrow.right").addEventListener("click", function () {
+            currentIndex = (currentIndex === sections.length - 1) ? 0 : currentIndex + 1;
+            showSection(currentIndex);
+        });
+
+        showSection(currentIndex); // Show first section by default
+    }
+});
+
