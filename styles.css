@@ -908,6 +908,46 @@ body {
         display: flex;
     }
 }
+/* Mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    #about-us {
+        overflow: hidden; /* Ensure only one section is visible at a time */
+        position: relative;
+    }
+
+    .section {
+        display: none; /* Hide all sections by default */
+        width: 100vw;
+        height: auto;
+        padding: 25px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .section.active {
+        display: block; /* Show only the active section */
+    }
+
+    .nav-arrows {
+        font-size: 1.8rem;
+    }
+}
+
+/* Small screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .nav-arrows {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
 
 
 
