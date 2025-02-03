@@ -792,15 +792,24 @@ body {
     .section{
         height: 40%;
     }
+    #about-us{
+        height: 50%;
+    }
 }
 @media (max-width: 767px) {
     .section{
         height: 40%;
     }
+    #about-us{
+        height: 50%;
+    }
 }
 @media (max-width: 1023px) {
     .section{
         height: 40%;
+    }
+    #about-us{
+        height: 50%;
     }
 }
 
