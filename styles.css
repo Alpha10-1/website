@@ -97,6 +97,10 @@ main section ul li {
     background-position: center;
     transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
+.section:not(.active) {
+    display: none;
+    opacity: 0;
+}
 #intro{
     background-image: url('https://github.com/Alpha10-1/khanya/blob/main/DSC01017.JPG?raw=true');
 }
