@@ -685,11 +685,10 @@ body {
 @media screen and (max-width: 1024px) {
     .staff-container {
         justify-content: center;
-        gap: 15px;
     }
 
     .staff-member {
-        width: 200px; /* Reduce width slightly */
+        width: 200px; /* Reduce width slightly for better fit */
     }
 
     #our-staff h2 {
@@ -697,7 +696,7 @@ body {
     }
 
     .staff-member h3 {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     .staff-member p, .staff-member blockquote {
@@ -707,13 +706,13 @@ body {
 
 /* For screens between 768px - 900px (Tablets) */
 @media screen and (max-width: 900px) {
-    .staff-container {
-        gap: 10px;
+    .staff-member {
+        width: 45%; /* Keeps at least 2 staff cards inline */
+        padding: 15px;
     }
 
-    .staff-member {
-        width: 40%; /* Keeps at least 2 staff cards inline */
-        padding: 12px;
+    .staff-container {
+        gap: 15px;
     }
 }
 
@@ -725,8 +724,7 @@ body {
     }
 
     .staff-member {
-        width: 80%; /* Reduce size further to avoid large blocks */
-        padding: 10px;
+        width: 80%; /* Ensures they stack but remain readable */
     }
 
     #our-staff h2 {
@@ -734,7 +732,7 @@ body {
     }
 
     .staff-member h3 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .staff-member p, .staff-member blockquote {
@@ -744,13 +742,9 @@ body {
 
 /* For very small screens (phones) */
 @media screen and (max-width: 480px) {
-    .staff-container {
-        gap: 5px;
-    }
-
     .staff-member {
-        width: 90%; /* Full width but not too large */
-        padding: 8px;
+        width: 75%; /* Full width for small screens */
+        padding: 10px;
     }
 
     #our-staff h2 {
@@ -758,12 +752,13 @@ body {
     }
 
     .staff-member h3 {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .staff-member p, .staff-member blockquote {
         font-size: 0.9em;
     }
 }
+
 
 
