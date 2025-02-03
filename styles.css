@@ -97,10 +97,20 @@ main section ul li {
     background-position: center;
     transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
-.section:not(.active) {
+.section {
+    padding: 20px; /* Adjust this value to your desired spacing */
+    min-height: 100vh; /* Ensure each section has at least the full viewport height */
+    box-sizing: border-box; /* Include padding in height calculations */
+}
+#mission, #vision, #values {
     display: none;
     opacity: 0;
 }
+#about-us .section.active {
+    display: block;
+    opacity: 1; /* Fade in active section */
+}
+
 #intro{
     background-image: url('https://github.com/Alpha10-1/khanya/blob/main/DSC01017.JPG?raw=true');
 }
