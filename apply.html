@@ -37,21 +37,10 @@
         </div>
         <div class="course">
             <h2>After filling up the form, download the intake form below</h2>
-            <p>Fill up the form and email it to marketing@khanyafc.org.za, use your ID Number and Surname a the subject</p>
-            <a id="download-link" href="https://drive.google.com/file/uc?export=download&id=1XACnUMYRSygoTpsXDN4m8M5f6JieS54A" class="apply-btn">DOWNLOAD FILE</a>
-
-            <script>
-            document.getElementById("download-link").addEventListener("click", function(event) {
-                event.preventDefault();
-                var url = this.href;
-                var link = document.createElement("a");
-                link.href = url;
-                link.setAttribute("download", "INTAKE FORM.pdf"); 
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            });
-            </script>
+            <p>Fill up the form and email it to marketing@khanyafc.org.za, use your ID Number and Surname as the subject</p>
+            <a href="https://drive.google.com/uc?export=download&id=1XACnUMYRSygoTpsXDN4m8M5f6JieS54A" class="apply-btn">
+                DOWNLOAD FILE
+            </a>
         </div>
     </div>
 </body>
