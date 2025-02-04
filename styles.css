@@ -92,12 +92,14 @@ main section ul li {
     box-sizing: border-box;
     color: white;
     position: relative;
-    background-size: cover;
+    background-size: contain; /* Fit image without cropping */
     background-position: center;
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
     width: 100%;
-    min-height: auto; /* Adjust based on content height */
-    box-sizing: border-box; /* Include padding in height calculations */
+    min-height: 80vh;
+    opacity: 0;
+    visibility: hidden;
 }
 .section {
     background-size: cover; /* Ensures the image fully covers the section */
@@ -110,10 +112,10 @@ main section ul li {
     opacity: 0;
 }
 #about-us .section.active {
-    display: block;
-    opacity: 1; /* Fade in active section */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
 }
-
 #intro{
     background-image: url('https://github.com/Alpha10-1/khanya/blob/main/DSC01017.JPG?raw=true');
 }
@@ -131,14 +133,10 @@ main section ul li {
 
 #about-us {
     display: flex;
-    flex-direction: row; /* Display sections horizontally */
+    flex-direction: row;
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: transform 0.5s ease-in-out;
 }
 
 #services {
@@ -156,11 +154,13 @@ main section ul li {
 #about-us .nav-arrows {
     position: absolute;
     top: 50%;
-    width: 90%; /* Keep inside image */
-    left: 5%; /* Center the arrows */
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-  }
+    transform: translateY(-50%);
+    pointer-events: none;
+}
 
 .nav-arrows .arrow {
     font-size: 50px;
